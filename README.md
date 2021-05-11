@@ -1,16 +1,16 @@
-#如何制作动图视频(类似这种：https://www.bilibili.com/video/BV1XQ4y1d78p?t=2)#
+#EchartMapFilm
+如何制作动图视频(类似这种：https://www.bilibili.com/video/BV1XQ4y1d78p?t=2)
 用Echart制作动画，并保存为图片
-1.sample文件目录：
-    数据目录 案列数据来源
-    app 代码目录
-    tester 测试目录(测试用到electron和nodemon)
-2.制作流程:
-   获取相关数据---数据整理---浏览echarts案例(https://echarts.apache.org/examples/zh/editor.html?c=bar-race-country)---下载demo---分析所需数据的格式---编写js----编写jstojpg的脚本----导出指定目录---将文件导入视频制作工具 
-2.1.获取相关数据
-2.1.1本案列数据来源
-    https://data.stats.gov.cn/easyquery.htm?cn=C01
-2.2.准备工具
-2.2.1.工具列表
-    1.生成动画分页图片：echarts+svg 转 jpg(js)
-    2.jpg 转 mp4 工具 
-    3.一段音乐
+##目录列表：
+    1.数据目 案列数据来源
+    2.app 代码目录
+    3.tester 测试目录(测试用到electron和nodemon)
+    4.doc 教程目录
+##使用方法
+    1.安装cnpm：
+        npm install -g cnpm -registry=https://registry.npm.taobao.org
+    2.安装其他
+        cnpm i
+    3.测试
+       npm run dev
+    
