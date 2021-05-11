@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/content.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/content.js"></script>
+</head>
+
+<body>
+    <div id="leftBodyer">
+        侧边栏</div>
+    <div id="mainBodyer">
+
+        <div class="row" style="height: 60px;">
+            <p>动画速度(以秒为单位):<input id="speed" type="number" value="2"><button type="button"
+                    onclick="doRun()">开始动画</button><button type="button" onclick="suspend()">暂停动画</button><button
+                    type="button" onclick="stopRun()">终止动画</button>
+            </p>
+        </div>
+        <div class="row" style="height: 800px;">
+            <div class="map_content_wap">
+                <div class="map_content" id="map_div"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

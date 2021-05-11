@@ -1,0 +1,15 @@
+{
+  "name": "EchartMapFilm",
+  "version": "1.0.0",
+  "description": "如何制作动图视频",
+  "scripts": {
+    "dev": "nodemon --watch app --watch tester/main.js --exec electron tester/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^12.0.7",
+    "nodemon": "^2.0.7"
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <script></script>
+    <style>
+        .wrap {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            /*布局方向是垂直的*/
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        /*设置顶部和底部的高度*/
+        .header,
+        .footer {
+            height: 40px;
+            line-height: 40px;
+            background-color: #D8D8D8;
+            text-align: center;
+        }
+
+        /*设置高度是跟父元素的高度一致，100%；*/
+        /*实际高度是 100% 减去顶部高度和底部高度，左右两边固定，中间是剩余100%原理一致*/
+        .main {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            width: 100vw;
+            overflow: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="header">header</div>
+        <div class="main" id="main">
+            <iframe src="content.html" frameborder="0" width="100%" height="100%" seamless></iframe>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+
+</body>
+
+</html>
